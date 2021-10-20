@@ -7,6 +7,7 @@
   font-family: 'Roboto', sans-serif;
   text-align: center;
   transition: all ease-in-out 500ms;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -39,13 +40,9 @@ li {
 a {
   text-decoration: none;
   color: #313131;
-  border-bottom: 2px solid #FFFFFF;
+
 }
 
-a:hover {
-  border-bottom: 2px solid #F6412A;
-  transition: all ease-in-out 500ms;
-}
 
 /* Navbar Styles */
 
@@ -174,7 +171,8 @@ main svg {
       justify-content: center;
       height: 100%;
       width: 100%;
-      padding: 5%;
+      padding: 10%;
+
       color: #f4f4f4;
     }
 
@@ -233,7 +231,16 @@ main svg {
       height: 100%;
       width: 100%;
       background-color: #111111;
-      padding: 10px 0px 20px 0px;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    .trainer svg {
+      display: block;
+      width: 100vw;
+      border: none;
+      padding: 0;
+      margin: 0;
     }
 
     .trainer img {
@@ -291,16 +298,19 @@ main svg {
     /* Footer style */
 
     footer {
-      top: 50px;
+      top: 30px;
       width: 100%;
       height: 100px;
       display: flex;
       position: relative;
       align-items: center;
       justify-content: space-around;
+      background-color: #FFF;
     }
 
     .socials {
+      height: 100%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -319,11 +329,7 @@ main svg {
           font-size: 2.5rem;
         }
 
-        ul {
-          display: none;
-        }
-
         .trainer {
-          top: 100px;
+          top: 60px;
         }
     }
