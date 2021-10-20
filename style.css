@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  transition: all ease-in-out 500ms;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+nav img {
+  max-height: 70px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #313131;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+a:hover {
+  border-bottom: 2px solid #F6412A;
+  transition: all ease-in-out 500ms;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .feature{
+  position: relative;
+  display: inline-block;
+  top: 100px;
+  height: 500px;
+  width: 100%;
+  background-color: #313131;
+  overflow: hidden;
+  background-image: url(./img/me-lew.jpg);
+  background-size: cover;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+}
+
+.cta * {
+  padding: 5px;
+  margin: 5px 0px;
+}
+
+.cta-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-headline h1 {
+  color: #f4f4f4;
+}
+
+.cta-headline p {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #f4f4f4;
+  max-width: 600px;
+}
+
+.cta-btn {
+  padding: 10px;
+  background-color: #F6412A;
+  color: #f4f4f4;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #f4f4f4;
+  color: #F6412A;
+}
