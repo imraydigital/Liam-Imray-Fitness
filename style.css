@@ -1,3 +1,5 @@
+/* Universal Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -20,22 +22,9 @@ h1 {
   font-size: 3rem;
 }
 
-nav {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  padding: 10px 30px;
-  background-color: #ffffff;
-  z-index: 5;
-}
-
-nav img {
-  max-height: 70px;
-  cursor: pointer;
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 ul {
@@ -58,14 +47,37 @@ a:hover {
   transition: all ease-in-out 500ms;
 }
 
+/* Navbar Styles */
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+nav img {
+  max-height: 60px;
+  cursor: pointer;
+}
+
+/* Header styles */
+
 header {
   display: flex;
   flex-direction: column;
 }
 
-header .feature{
+.feature{
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   top: 100px;
   height: 500px;
   width: 100%;
@@ -83,6 +95,7 @@ header .feature{
   background-color: rgba(0, 0, 0, 0.9);
   height: 100%;
   width: 100%;
+  padding-bottom: 120px;
 }
 
 .cta * {
@@ -116,9 +129,101 @@ header .feature{
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .cta-btn:hover {
   background-color: #f4f4f4;
   color: #F6412A;
 }
+svg {
+  position: absolute;
+  bottom:0;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Main Section styles */
+
+main {
+  position: relative;
+  top: 100px;
+  height: auto;
+  width: 100%;
+  background-color: #F6412A;
+}
+
+main h2 {
+  color: #f4f4f4;
+}
+
+    /* Testimonial */
+
+    .testimonials {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+      width: 100%;
+      padding: 5%;
+      color: #f4f4f4;
+    }
+
+    .testimonial {
+        height: 250px;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #FFF;
+    }
+
+    .testimonial-images{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .testimonial-image-before {
+      width: 50%;
+
+      max-height: 200px;
+    }
+
+    .testimonial-image-after {
+      width: 50%;
+
+      max-height: 200px;
+
+    }
+
+    .testimonial-image-before img {
+      width: 100%;
+    }
+
+    .testimonial-image-after img {
+      width: 100%;
+    }
+
+    .testimonial-image-before__text h3 {
+      font-family: 'Gloria Hallelujah', cursive;
+      color: #313131;
+    }
+
+    .testimonial-image-after__text h3{
+      font-family: 'Gloria Hallelujah', cursive;
+      color: #313131;
+    }
+
+/* Media Queries for Responsive Design */
+
+    /* iPhone XS */
+    @media only screen and (max-width: 375px){
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        ul {
+          display: none;
+        }
+    }
